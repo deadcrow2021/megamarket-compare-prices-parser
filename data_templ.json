@@ -1,0 +1,40 @@
+{
+    "alloxa": {
+        "iphone": {},
+        "watch": {},
+        "mac": {},
+        "samsung": {},
+        "xiaomi": {},
+        "ps": {},
+        "dyson": {}
+    },
+
+    "others": {
+        "iphone": {
+            "mobilochka": {},
+            "maxmobiles": {}
+        },
+        "watch": {
+            "mobilochka": {}
+        },
+        "mac": {
+            "mobilochka": {},
+            "maxmobiles": {}
+        },
+        "samsung": {
+            "mobilochka": {}
+        },
+        "xiaomi": {
+            "mobilochka": {},
+            "mi92": {},
+            "mi_xx": {}
+        },
+        "ps": {
+            "mobilochka": {},
+            "maxmobiles": {}
+        },
+        "dyson": {
+            "maxmobiles": {}
+        }
+    }
+}
