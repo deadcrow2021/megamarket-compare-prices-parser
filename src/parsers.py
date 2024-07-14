@@ -242,8 +242,12 @@ def parse_all_sites(driver):
     parse_mobilochka(driver, 'https://mobilo4ka.ru/sony-tehnika-kupit/konsoli-so/', 4, 'ps')
 
     # dyson
-    parse_alloxa_page(driver, 'https://allohastore.ru/tehnika-dlya-doma/stajler-dyson/', 2, 'dyson')
     parse_alloxa_page(driver, 'https://allohastore.ru/tehnika-dlya-doma/feny/', 2, 'dyson')
     parse_alloxa_page(driver, 'https://allohastore.ru/tehnika-dlya-doma/pylesosy/pylesos-dyson/', 2, 'dyson')
     parse_alloxa_page(driver, 'https://allohastore.ru/tehnika-dlya-doma/vypryamitel-dyson/', 2, 'dyson')
     parse_maxmobiles('https://maxmobiles.ru/dyson/', 'dyson')
+
+    # ipad
+    parse_alloxa_page(driver, 'https://allohastore.ru/planshety/apple-ipad/', 80, 'ipad')
+    parse_maxmobiles('https://maxmobiles.ru/ipad/', 'ipad')
+    parse_mobilochka(driver, 'https://mobilo4ka.ru/apple-tehnika-kupit/planshety-a/', 40, 'ipad') # 11

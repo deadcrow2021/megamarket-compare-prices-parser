@@ -68,3 +68,10 @@ def filter_dyson(title: str) -> str:
     title = title.replace('  ', ' ').strip()
     
     return title
+
+
+def filter_ipad(title: str) -> str:
+    title = title.lower().replace('apple', '')#.replace('ipad', '')
+    title = title.replace('  ', ' ').strip()
+    
+    return title

@@ -6,7 +6,8 @@
         "samsung": {},
         "xiaomi": {},
         "ps": {},
-        "dyson": {}
+        "dyson": {},
+        "ipad": {}
     },
 
     "others": {
@@ -34,6 +35,10 @@
             "maxmobiles": {}
         },
         "dyson": {
+            "maxmobiles": {}
+        },
+        "ipad": {
+            "mobilochka": {},
             "maxmobiles": {}
         }
     }

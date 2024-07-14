@@ -11,6 +11,7 @@ from src.filter_funcs import (
     filter_xiaomi,
     filter_watch,
     filter_dyson,
+    filter_ipad,
     filter_mac,
     filter_ps,
 )
@@ -113,6 +114,9 @@ def collect_data():
     compare_data(data, 'ps', 'maxmobiles', filter_ps, 0.8, 0.75)
 
     compare_data(data, 'dyson', 'maxmobiles', filter_dyson, 0, 0.7)
+
+    compare_data(data, 'ipad', 'mobilochka', filter_ipad, 0.9, 0.7)
+    compare_data(data, 'ipad', 'maxmobiles', filter_ipad, 0.9, 0.7)
 
     return data
 

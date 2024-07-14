@@ -26,21 +26,14 @@ options.add_argument('--ignore-certificate-errors')
 options.add_argument("--disable-proxy-certificate-handler")
 options.add_argument("--disable-content-security-policy")
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-driver.set_window_size(1600, 900)
-
+def start_driver():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    driver.set_window_size(1600, 900)
+    return driver
 
 async def main():
     while True:
-        try:
-            driver.delete_all_cookies()
-            driver.get('chrome://settings/clearBrowserData')
-            await asyncio.sleep(2)
-            driver.find_element(By.XPATH, '//settings-ui').send_keys(Keys.ENTER)
-            await asyncio.sleep(2)
-        except Exception as exc:
-            print('Error in deleting cookies')
-            fill_log_file(WORK_DIR, catch_error(exc))
+        driver = start_driver()
 
         messages_list = []
 
@@ -76,6 +69,8 @@ async def main():
 
             except:
                 await asyncio.sleep(2)
+        
+        driver.close()
 
         await asyncio.sleep(60 * PARSE_CYCLE_DELAY)
 
